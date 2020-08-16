@@ -15,9 +15,9 @@ jobs:
     - name: Install dependencies
       run: |
         python3 -m pip install --upgrade pip
-        pip install wheel
+        pip3 install wheel
         sudo apt-get install python3-sphinx
-        pip install -U sphinx-rtd-theme recommonmark sphinx-markdown-tables
+        pip3 install -U sphinx-rtd-theme recommonmark sphinx-markdown-tables
     - name: Build html
       run: |
         sphinx-build -b html ./docs .
