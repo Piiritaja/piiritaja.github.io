@@ -6,15 +6,13 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8]
     steps:
     - name: Set up Python
       uses: actions/checkout@master
-      with:
-        python-version: 3.7
     - name: Install dependencies
       run: |
-        sudo apt-get install python3-sphinx
-        pip install wheel
-        
-        pip install -U sphinx-rtd-theme recommonmark sphinx-markdown-tables
+        pip install -U sphinx sphinx-rtd-theme recommonmark sphinx-markdown-tables
         sphinx-build -b html ./docs/ .
