@@ -1,0 +1,19 @@
+.. demo documentation master file, created by
+   sphinx-quickstart on Tue Aug 11 16:08:50 2020.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Püütonid
+================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+   
+   kuning
+   hiero
+   natalensis
+
+
+
+
