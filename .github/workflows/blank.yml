@@ -14,10 +14,10 @@ jobs:
       uses: actions/checkout@master
     - name: Install dependencies
       run: |
-        #python3 -m pip install --upgrade pip
+        python3 -m pip install --upgrade pip
         pip3 install wheel
         sudo apt-get install python3-sphinx
-        pip3 install -U sphinx sphinx-rtd-theme recommonmark sphinx-markdown-tables
+        pip3 install -U sphinx-rtd-theme recommonmark sphinx-markdown-tables
     - name: Build html
       run: |
         sphinx-build -b html ./docs .
