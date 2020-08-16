@@ -13,6 +13,6 @@ jobs:
         python-version: 3.7
     - name: Install dependencies
       run: |
-        python -v
+        sudo apt-get install python3-sphinx
         pip install -U sphinx sphinx-rtd-theme recommonmark sphinx-markdown-tables
         sphinx-build -b html ./docs/ .
