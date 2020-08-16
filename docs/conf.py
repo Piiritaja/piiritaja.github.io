@@ -74,6 +74,6 @@ html_static_path = ['_static']
 
 # Google analytics
 
-googleanalytics_id = GOOGLE_ANALYTICS_ID
+# googleanalytics_id = GOOGLE_ANALYTICS_ID
 
-googleanalytics_enabled = True # set to false to disable tracking
+# googleanalytics_enabled = True # set to false to disable tracking
