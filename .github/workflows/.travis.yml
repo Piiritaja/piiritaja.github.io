@@ -1,6 +1,0 @@
-language: python
-python:
-  - "3.7"
-  
-install:
-  - python:pip install -U sphinx sphinx-rtd-theme recommonmark sphinx-markdown-tables
