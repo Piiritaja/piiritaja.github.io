@@ -56,7 +56,7 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 import sphinx_rtd_theme
-import googleanalytics
+# import googleanalytics
 
 extensions = [
     'sphinx_rtd_theme',
