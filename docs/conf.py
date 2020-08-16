@@ -62,7 +62,6 @@ extensions = [
     'sphinx_rtd_theme',
     'recommonmark',
     'sphinx_markdown_tables',
-    'googleanalytics'
 ]
 
 html_theme = "sphinx_rtd_theme"
