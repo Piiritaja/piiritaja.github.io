@@ -14,5 +14,10 @@ jobs:
       uses: actions/checkout@master
     - name: Install dependencies
       run: |
-        pip install -U sphinx sphinx-rtd-theme recommonmark sphinx-markdown-tables
-        sphinx-build -b html ./docs/ .
+        python3 -m pip install --upgrade pip
+        sudo apt-get install python3-sphynx
+        pip install -U sphinx-rtd-theme recommonmark sphinx-markdown-tables
+    - name: Build html
+      run: |
+        sphinx-build -b html ./docs .
+      
