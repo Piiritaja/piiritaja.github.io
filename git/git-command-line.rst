@@ -1,6 +1,8 @@
 Git kasutamine käsureal
 =======================
 
+tereeee
+
 Giti käivitamine käsureal. ``Start`` -> otsige "git", valige ``Git Bash``.
 
 Kõigepealt tehke ära vajalik seadistus, et saaks gitlabiga ühendust:
