@@ -1,0 +1,250 @@
+.. |br| raw:: html
+
+   <br />
+
+Sõned
+============
+
+Sõnede võrdlus kahes keeles.
+
+.---
+Python
+===
+Java
+===
+**Sõne loomine**
+--
+---
+Pythonis on sõne loomiseks mitu võimalust:
+
+.. code-block:: python
+
+    s = "tere" # kahekordsed jutumärgid
+    s = 'tere' # ühekordsed jutumärgid
+    # kolm jutumärki
+    s = """tere"""
+    s = '''tere'''
+    s = str("tere")
+
+Kõik annavad sama tulemuse.
+
+Kolme jutumärgiga eraldatud sõne |br|
+korral saab sõnes kasutada ka reavahetusi.
+
+.. code-block:: python
+
+    s = """tere
+    siin
+    on
+    reavahetused"""
+
+---
+
+Javas saab sõne luua vaid jutumärkide abil.
+
+.. code-block:: java
+
+    String s = "tere";
+    String s2 = new String();
+
+Reavahetust saab kasutada järgmiselt:
+
+.. code-block:: java
+
+    String s3 = "tere\nsiin\non\reavahetused";
+
+---
+**Sõne ühendamine**
+--
+---
+Pythonis sõne muuta ei saa. |br|
+"Muutmiseks" tuleb teha uus sõne. |br|
+Sõnede ühendamiseks saab kasutada liitmist:
+
+.. code-block:: python
+
+    s = "üks" + "teine"
+    s = "üks" + " " + "teine"
+
+Sõne ühendamine teist tüüpi väärtusega:
+
+.. code-block:: python
+
+    s = "number:" + str(nr)
+
+---
+Javas ei saa sõne samuti muuta.
+
+Sõnede ühendamine:
+
+.. code-block:: java
+
+    String s = "tere" + "tulemast";
+    String s2 = "tere " + "tulemast";
+
+Javas saab sõnele numbreid liita mugavamalt:
+
+.. code-block:: java
+
+    int nr = 3;
+    String s = "Number: " + nr;
+
+---
+**Sõnede võrdlemine**
+--
+---
+
+Pythonis saab sõnesid võrrelda |br|
+tavapärast võrldlusoperaatoriga (==).
+
+.. code-block:: python
+
+    if str1 == str2:
+        print("str == str2")
+
+---
+
+Javas annab objektide (String on objekt) |br|
+võrdlemine võrdlusoperaatoriga (==) |br|
+tulemuseks selle, kas kaks objekti on täpselt samad. |br|
+Üldiselt me pigem tahame võrrelda, |br|
+kas sõnede sisud on samad. |br|
+Selleks kasutame sõne meetodit "equals".
+
+.. code-block:: java
+
+    if (str1.equals(str2)) {
+        System.out.println("str1 and str2 are equal");
+    }
+
+Võrdluseks järgmine kood:
+
+.. code-block:: java
+
+    String s1 = new String("aa");
+    String s2 = new String("aa");
+    if (s1 == s2) {
+        System.out.println("s1 == s2");
+    }
+
+Siin tingimus :code:`s1 == s2` ei kehti.
+
+---
+
+Pythonis saab võrdlusoperatooritega (<, <=, >=, >) |br|
+kontrollida, kas üks sõne on teisest tähestikus eespool.
+
+.. code-block:: python
+
+    s1 = "abc"
+    s2 = "bc"
+    if s1 < s2:
+        print("s1 < s2")
+
+---
+
+Javas saab sarnaselt kontrollida:
+
+.. code-block:: java
+
+    String s1 = "abc";
+    String s2 = "bc";
+    if (s1.compareTo(s2) < 0) {
+        System.out.println("s1 < s2");
+    }
+
+:code:`compareTo` tagastab negatiivse arvu, |br|
+kui sõne, millest meetod välja kutsuti (näites s1), |br|
+eelneb tähestikus sõnele, mis on argumendiks |br|
+(näites s2).
+
+---
+**Sõne funktsioonid**
+--
+---
+
+.. code-block:: python
+
+    s = "teretulemast"
+    len(s) # 12
+---
+.. code-block:: java
+
+    String s = "teretulemast";
+    s.substring(s.length());
+---
+.. code-block:: python
+
+    s = "teretulemast"
+    s[4:] # tulemast
+    s[:4] # tere
+    s[5:7] # ul
+    s[-3:] # ast
+
+---
+
+.. code-block:: java
+
+    String s = "teretulemast";
+    s.substring(4);
+    s.substring(0, 4);
+    s.substring(5, 7);
+    s.substring(s.length() - 3);
+---
+Pythonis üks sümbol sõnest on sõne |br|
+(mille pikkus on 1):
+
+.. code-block:: python
+
+    s = "tere"
+    first = s[0] # "t"
+    c = 'a' # just a string
+
+---
+
+Javas on üks sümbol sõnest *char* tüüpi. |br|
+char tüüpi väärtus kirjutatakse ühekordsete |br|
+jutumärkide (ülakomad) vahele.
+
+.. code-block:: java
+
+    String s = "tere";
+    char first = s.charAt(0); // 't'
+    char c = 'a';
+---
+
+.. code-block:: python
+
+    s = "teretulemast"
+    s.find("tere") # 0
+    s.find("e") # 1
+    s.find("e", 4) # 7
+    s.find("o") # -1
+---
+
+.. code-block:: java
+
+    String s = "teretulemast";
+    s.indexOf("tere"); // 0
+    s.indexOf("e"); // 1
+    s.indexOf("e", 4); // 7
+    s.indexOf("o"); // -1
+---
+
+.. code-block:: python
+
+    a = "RAINbow"
+    a.lower()  # "rainbow"
+    a.upper()  # "RAINBOW"
+
+---
+
+.. code-block:: java
+
+    String a = "RAINbow";
+    a.toLowerCase();  // "rainbow"
+    a.toUpperCase();  // "RAINBOW"
+
+---.
+
+Vaata sõnede kohta: :doc:`../string`

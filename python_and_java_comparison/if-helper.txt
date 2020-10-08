@@ -1,0 +1,174 @@
+Tingimuslause
+==============
+
+Tingimuslausega saab kontrollida, kas mingit osa koodist käivitatakse.
+
+
+.---
+Python
+===
+Java
+===
+Lihtne tingimuslause
+---
+---
+
+.. code-block:: python
+
+    if boolean_condition:
+        do_something_if_true()
+        
+        
+---
+
+.. code-block:: java
+
+    if (booleanCondition) {
+        doSomethingIfTrue();
+    }
+    
+---
+if-else
+--
+---
+
+.. code-block:: python
+
+    if boolean_condition:
+        do_something_if_true()
+    else:
+        do_something_else()
+        
+        
+---
+
+.. code-block:: java
+
+    if (booleanContidion) {
+        doSomethingIfTrue();
+    } else {
+        doSomethingElse();
+    }
+    
+---
+if-elseif-else
+--
+---
+
+.. code-block:: python
+
+    if boolean_condition:
+        do_something_if_true()
+    elif some_other_condition:
+        do_some_other_stuff()
+    else:
+        do_something_else()
+        
+        
+---
+
+.. code-block:: java
+
+    if (booleanCondition) {
+        doSomethingIfTrue();
+    } else if (otherCondition) {
+        doSomeOtherThing();
+    } else {
+        doSomethingElse();
+    }
+
+---
+Pikem if-elseif-elseif-else
+--
+---
+
+.. code-block:: python
+
+    month = 2
+
+    if month == 1:
+        month_string = "January"
+    elif month == 2:
+        month_string = "February"
+    elif month == 3:
+        month_string = "March"
+    elif month == 4:
+        month_string = "April"
+    else:
+        month_string = "Invalid month"
+
+    print(month_string)
+        
+        
+---
+
+.. code-block:: java
+
+    int month = 2;
+    String monthString;
+
+    switch (month) {
+        case 1:  monthString = "January";
+            break;
+        case 2:  monthString = "February";
+            break;
+        case 3:  monthString = "March";
+            break;
+        case 4:  monthString = "April";
+            break;
+        default: monthString = "Invalid month";
+            break;
+    }
+    
+    System.out.println(monthString);
+
+    
+---
+Ternary operator
+--
+---
+>>> "true" if True else "false"
+'true'
+
+>>> 'true' if False else 'false'
+'false'
+---
+
+.. code-block:: java
+
+    jshell> true ? "true" : "false"
+    $1 ==> "true"
+
+.. code-block:: java
+
+    jshell> false ? "true" : "false"
+    $2 ==> "false"
+
+---
+Tõeväärtus
+--
+---
+:code:`True`
+---
+:code:`true`
+---
+:code:`False`
+---
+:code:`false`
+---
+Tingimus
+--
+---
+:code:`a and b`
+---
+:code:`a && b`
+---
+:code:`a or b`
+---
+:code:`a || b`
+---
+:code:`not a`
+---
+:code:`!a`
+---.
+
