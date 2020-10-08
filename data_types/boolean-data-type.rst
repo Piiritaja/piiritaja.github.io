@@ -2,7 +2,7 @@ Tõeväärtus-andmetüübid
 =======================
 
 Tõeväärtus (*boolean*) on primitiivne andmetüüp, millel saab olla vaid kaks väärtust: tõene (*true*) ja väär (*false*).
-
+change stuff
 Väärtustamine
 --------------
 
